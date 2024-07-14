@@ -48,10 +48,15 @@ a {
 .weather-container {
   display: flex;
   justify-content: space-between;
+  padding: 20px 0;
 }
 
 strong {
   color: #42b883;
+}
+
+.city {
+  font-size: 40px;
 }
 
 .weather-temperature {
@@ -59,9 +64,29 @@ strong {
   margin-top: 25px;
 }
 
+.emoji-temp {
+  padding-top: 10px;
+  padding-right: 15px;
+  font-size: 50px;
+}
+
+.temp {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.temp-unit {
+  padding-top: 10px;
+  font-size: 30px;
+}
+
 footer {
   border-top: 2px solid #fef5d4;
   padding: 25px 0 0 0;
   font-size: 14px;
   text-align: center;
+}
+
+.footer {
+  margin: 0;
 }
