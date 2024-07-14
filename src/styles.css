@@ -20,6 +20,7 @@ a {
   margin: 100px auto;
   width: 590px;
   border-radius: 15px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
 
 .input-city {
