@@ -2,3 +2,38 @@ body {
   background-image: url("background.png");
   background-size: cover;
 }
+
+header {
+  border-bottom: 2px solid #fef5d4;
+  padding: 0 0 30px 0;
+}
+
+.weather-app {
+  background-color: #fffdf6;
+  padding: 25px;
+  margin: 30px auto;
+  width: 590px;
+  border-radius: 15px;
+}
+
+.input-city {
+  /* margin: 30px; */
+  width: 510px;
+  margin-right: 5px;
+  padding: 14px;
+  background-color: #fef5d4;
+  border: none;
+  border-radius: 5px;
+}
+
+.input-button {
+  padding: 14px;
+  border: none;
+  background-color: #c37857;
+  color: #fef5d4;
+  border-radius: 5px;
+}
+
+.weather-container {
+  /* margin-left: 30px; */
+}
