@@ -1,11 +1,13 @@
 body {
   background-image: url("background.png");
   background-size: cover;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
 }
 
 header {
   border-bottom: 2px solid #fef5d4;
-  padding: 0 0 30px 0;
+  padding: 0 0 25px 0;
 }
 
 .weather-app {
@@ -17,23 +19,36 @@ header {
 }
 
 .input-city {
-  /* margin: 30px; */
-  width: 510px;
+  width: 500px;
   margin-right: 5px;
   padding: 14px;
   background-color: #fef5d4;
   border: none;
   border-radius: 5px;
+  font-size: 16px;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
 }
 
 .input-button {
   padding: 14px;
   border: none;
+  font-size: 16px;
   background-color: #c37857;
   color: #fef5d4;
   border-radius: 5px;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
 }
 
 .weather-container {
-  /* margin-left: 30px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  border-top: 2px solid #fef5d4;
+  padding: 25px 0 0 0;
+  font-size: 14px;
+  text-align: center;
 }
