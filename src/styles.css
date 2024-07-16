@@ -78,9 +78,10 @@ strong {
 }
 
 .emoji-temp {
-  padding-top: 10px;
-  padding-right: 15px;
+  padding-top: 1.5px;
   font-size: 50px;
+  height: 88px;
+  width: 88px;
 }
 
 .temp {
