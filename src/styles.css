@@ -1,6 +1,5 @@
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
   body {
-    background-image: none;
     background-color: #f9f7fe;
   }
 }
