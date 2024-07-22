@@ -54,6 +54,23 @@ function submitHandler(event) {
   getCity(inputCity.value);
 }
 
+function getForecast(city) {
+  let apiKey = "fdb1b4026fa299784f6o27t429cd3399";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
+`<div class="weather-forecast-day">
+  <div class="weather-forecast-date">Mon</div>
+  <div class="weather-forecast-icon">☀</div>
+  <div class="weather-forecast-temperature">
+    <div class="weather-forecast-temp">
+      <strong>23°</strong>
+    </div>
+    <div class="weather-forecast-temp">16°</div>
+  </div>
+</div>`;
+
 let btn = document.querySelector("#input-button");
 btn.addEventListener("click", submitHandler);
 
