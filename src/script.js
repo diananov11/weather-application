@@ -96,3 +96,20 @@ let btn = document.querySelector("#input-button");
 btn.addEventListener("click", submitHandler);
 
 getCity("palembang");
+
+function showPosition(position) {
+  console.log(position);
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
+  let apiKey = "fdb1b4026fa299784f6o27t429cd3399";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${lon}&lat=${lat}&key=${apiKey}`;
+  axios.get(apiUrl).then(changeWeather);
+}
+
+function changeCurrent(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(showPosition);
+}
+
+let current = document.getElementById("current");
+current.addEventListener("click", changeCurrent);

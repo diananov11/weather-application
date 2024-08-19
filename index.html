@@ -1,73 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-    <title>Weather Project</title>
-  </head>
-  <body>
-    <div class="weather-app">
-      <header>
-        <form>
-          <input
-            type="search"
-            placeholder="Enter a city.."
-            id="input-city"
-            class="input-city"
-          />
-          <input
-            type="submit"
-            value="Search"
-            id="input-button"
-            class="input-button"
-          />
-        </form>
-      </header>
-      <main>
-        <div class="weather-container">
-          <div class="weather-description">
-            <h1 class="city" id="city"></h1>
-            <p>
-              <span id="date-current"></span>,
-              <span id="weather-description"></span><br />
-              Humidity: <strong id="humidity"></strong>, Wind:
-              <strong id="wind"></strong>
-            </p>
-          </div>
-          <div class="weather-temperature">
-            <div class="emoji-temp" id="emoji-temp"></div>
-            <div class="temp" id="temp"></div>
-            <div class="temp-unit">°C</div>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  <title>Weather Project</title>
+</head>
+
+<body>
+  <div class="weather-app">
+    <header>
+      <form>
+        <input type="search" placeholder="Enter a city.." id="input-city" class="input-city" />
+        <input type="submit" value="Search" id="input-button" class="input-button" />
+      </form>
+    </header>
+    <main>
+      <div class="weather-container">
+        <div class="weather-description">
+          <h1 class="city" id="city"></h1>
+          <p>
+            <span id="date-current"></span>,
+            <span id="weather-description"></span><br />
+            Humidity: <strong id="humidity"></strong>, Wind:
+            <strong id="wind"></strong>
+          </p>
         </div>
-        <div class="weather-forecast" id="weather-forecast"></div>
-      </main>
-      <footer>
-        <p class="footer">
-          This project was coded by
-          <a href="https://github.com/diananov11" target="_blank"
-            >Diana Novita</a
-          >, is
-          <a
-            href="https://github.com/diananov11/weather-application"
-            target="_blank"
-            >open-sourced on GitHub</a
-          >
-          and
-          <a href="https://diana-weatherapp.netlify.app/" target="_blank"
-            >hosted on Netlify</a
-          >
-        </p>
-      </footer>
-    </div>
-    <script src="src/script.js"></script>
-  </body>
+        <div class="weather-temperature">
+          <div class="emoji-temp" id="emoji-temp"></div>
+          <div class="temp" id="temp"></div>
+          <div class="temp-unit">°C</div>
+        </div>
+      </div>
+      <div class="weather-forecast" id="weather-forecast"></div>
+    </main>
+    <footer>
+      <button id="current" class="input-button">Your Location 📍</button>
+      <p class="footer">
+        This project was coded by
+        <a href="https://github.com/diananov11" target="_blank">Diana Novita</a>, is
+        <a href="https://github.com/diananov11/weather-application" target="_blank">open-sourced on GitHub</a>
+        and
+        <a href="https://diana-weatherapp.netlify.app/" target="_blank">hosted on Netlify</a>
+      </p>
+    </footer>
+  </div>
+  <script src="src/script.js"></script>
+</body>
+
 </html>
